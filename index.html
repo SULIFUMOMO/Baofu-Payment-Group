@@ -34,9 +34,8 @@
 
         h1 {
             color: #222; /* 加深標題文字顏色 */
-            text-align: left; /* 標題靠左對齊 */
-            margin-left: 20px; /* 左側內邊距 */
-            padding-top: 20px;
+            text-align: center; /* 標題置中 */
+            margin: 20px 0; /* 上下間距 */
         }
 
         p {
@@ -64,14 +63,14 @@
             flex-wrap: wrap; /* 自動換行 */
             justify-content: center; /* 水平置中 */
             gap: 10px; /* 圖片間距 */
-            margin-bottom: 20px; /* 與正文間距 */
+            margin: 20px 0; /* 與上下元素間距 */
         }
 
         .flags img {
-            width: 50px; /* 國旗圖片寬度 */
-            height: auto; /* 自動調整高度 */
+            width: 40px; /* 國旗圖片寬度 */
+            height: 30px; /* 國旗圖片高度，確保大小一致 */
             border: 1px solid #ccc; /* 增加邊框 */
-            border-radius: 5px; /* 圓角效果 */
+            border-radius: 3px; /* 輕微圓角效果 */
         }
     </style>
 </head>
@@ -79,9 +78,9 @@
     <!-- 背景圖片 -->
     <img class="background-image" src="https://raw.githubusercontent.com/SULIFUMOMO/Baofu-Payment-Group/refs/heads/main/%E5%AF%B6.png" alt="背景圖片">
 
-    <h1>歡迎來到寶付國際支付集團-Welcome to Baofu International Payment Group</h1>
-
     <div>
+        <h1>歡迎來到寶付國際支付集團-Welcome to Baofu International Payment Group</h1>
+        
         <!-- 國旗圖片 -->
         <div class="flags">
             <img src="https://flagcdn.com/w40/cn.png" alt="中國">
@@ -101,7 +100,8 @@
             <img src="https://flagcdn.com/w40/mm.png" alt="緬甸">
             <img src="https://flagcdn.com/w40/jp.png" alt="日本">
         </div>
-        
+
+        <!-- 文字內容 -->
         <p>
             <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
             General Manager TG: <a href="https://t.me/sampo5757" target="_blank">@sampo5757</a>
