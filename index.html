@@ -60,8 +60,18 @@
         }
 
         .flags {
-            font-size: 24px; /* 國旗符號大小 */
+            display: flex;
+            flex-wrap: wrap; /* 自動換行 */
+            justify-content: center; /* 水平置中 */
+            gap: 10px; /* 圖片間距 */
             margin-bottom: 20px; /* 與正文間距 */
+        }
+
+        .flags img {
+            width: 50px; /* 國旗圖片寬度 */
+            height: auto; /* 自動調整高度 */
+            border: 1px solid #ccc; /* 增加邊框 */
+            border-radius: 5px; /* 圓角效果 */
         }
     </style>
 </head>
@@ -69,13 +79,28 @@
     <!-- 背景圖片 -->
     <img class="background-image" src="https://raw.githubusercontent.com/SULIFUMOMO/Baofu-Payment-Group/refs/heads/main/%E5%AF%B6.png" alt="背景圖片">
 
-    <div>
-        <!-- 國旗符號 -->
-        <div class="flags">
-            🇨🇳 🇲🇾 🇵🇰 🇳🇵 🇮🇳 🇧🇩 🇰🇭 🇭🇰 🇰🇷 🇸🇬 🇲🇽 🇹🇭 🇵🇭 🇻🇳 🇲🇲 🇯🇵
-        </div>
+    <h1>歡迎來到寶付國際支付集團-Welcome to Baofu International Payment Group</h1>
 
-        <h1>歡迎來到寶付國際支付集團-Welcome to Baofu International Payment Group</h1>
+    <div>
+        <!-- 國旗圖片 -->
+        <div class="flags">
+            <img src="https://flagcdn.com/w40/cn.png" alt="中國">
+            <img src="https://flagcdn.com/w40/my.png" alt="馬來西亞">
+            <img src="https://flagcdn.com/w40/pk.png" alt="巴基斯坦">
+            <img src="https://flagcdn.com/w40/np.png" alt="尼泊爾">
+            <img src="https://flagcdn.com/w40/in.png" alt="印度">
+            <img src="https://flagcdn.com/w40/bd.png" alt="孟加拉">
+            <img src="https://flagcdn.com/w40/kh.png" alt="柬埔寨">
+            <img src="https://flagcdn.com/w40/hk.png" alt="香港">
+            <img src="https://flagcdn.com/w40/kr.png" alt="韓國">
+            <img src="https://flagcdn.com/w40/sg.png" alt="新加坡">
+            <img src="https://flagcdn.com/w40/mx.png" alt="墨西哥">
+            <img src="https://flagcdn.com/w40/th.png" alt="泰國">
+            <img src="https://flagcdn.com/w40/ph.png" alt="菲律賓">
+            <img src="https://flagcdn.com/w40/vn.png" alt="越南">
+            <img src="https://flagcdn.com/w40/mm.png" alt="緬甸">
+            <img src="https://flagcdn.com/w40/jp.png" alt="日本">
+        </div>
         
         <p>
             <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
