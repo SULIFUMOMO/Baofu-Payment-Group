@@ -11,23 +11,35 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('https://github.com/SULIFUMOMO/Baofu-Payment-Group/blob/main/%E5%AF%B62.png?raw=true');
-            background-size: cover; /* 背景圖片覆蓋整個畫面 */
-            background-repeat: no-repeat; /* 不重複背景圖片 */
-            background-position: center; /* 背景圖片置中 */
-            background-attachment: fixed; /* 背景固定不隨滾動 */
-            color: #333; /* 預設文字顏色 */
+            background-color: #fff; /* 背景顏色設為白色 */
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            min-height: 100vh; /* 滿屏高度 */
+        }
+
+        /* 背景圖片容器 */
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 將圖片置中 */
+            width: 80%; /* 縮小背景圖片寬度 */
+            max-width: 800px; /* 設定最大寬度 */
+            height: auto; /* 自動調整高度 */
+            opacity: 0.3; /* 淡化背景圖片 */
+            z-index: -1; /* 將背景圖片置於文字下方 */
         }
 
         h1 {
-            color: #333; /* 標題文字顏色 */
+            color: #222; /* 加深標題文字顏色 */
             text-align: left; /* 標題靠左對齊 */
             margin-left: 20px; /* 左側內邊距 */
             padding-top: 20px;
         }
 
         p {
-            color: #333; /* 文字顏色 */
+            color: #222; /* 加深段落文字顏色 */
             font-size: 18px;
             margin: 10px 20px; /* 上下間距，並在左右加內邊距 */
             text-align: left; /* 文字靠左對齊 */
@@ -48,47 +60,52 @@
     </style>
 </head>
 <body>
-    <h1>歡迎來到寶付支付集團-Welcome to Baofu Payment Group</h1>
-    
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        Business Manager TG: <a href="https://t.me/sampo5757" target="_blank">@sampo5757</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        Promotion Manager TG: <a href="https://t.me/Bmw58168" target="_blank">@Bmw58168</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        Business Development Director TG: <a href="https://t.me/mrsushiyummy" target="_blank">@mrsushiyummy</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        International acceptance business TG: <a href="https://t.me/Jcn5988" target="_blank">@Jcn5988</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        SULIFU TG: <a href="https://t.me/SULIFU_77" target="_blank">@SULIFU_77</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        RM TG: <a href="https://t.me/wumoda" target="_blank">@wumoda</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        CLOUDPAY TG: <a href="https://t.me/workhard_XXX" target="_blank">@workhard_XXX</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        CLOUDPAY TG: <a href="https://t.me/CLOUDPAY_ON3" target="_blank">@CLOUDPAY_ON3</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        THAIJUSTPAY TG: <a href="https://t.me/aa1996699" target="_blank">@aa1996699</a>
-    </p>
-    <p>
-        <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
-        THAIJUSTPAY TG: <a href="https://t.me/Goodgogo88" target="_blank">@Goodgogo88</a>
-    </p>
+    <!-- 背景圖片 -->
+    <img class="background-image" src="https://raw.githubusercontent.com/SULIFUMOMO/Baofu-Payment-Group/refs/heads/main/%E5%AF%B6.png" alt="背景圖片">
+
+    <div>
+        <h1>歡迎來到寶付支付集團-Welcome to Baofu Payment Group</h1>
+        
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            Business Manager TG: <a href="https://t.me/sampo5757" target="_blank">@sampo5757</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            Promotion Manager TG: <a href="https://t.me/Bmw58168" target="_blank">@Bmw58168</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            Business Development Director TG: <a href="https://t.me/mrsushiyummy" target="_blank">@mrsushiyummy</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            International acceptance business TG: <a href="https://t.me/Jcn5988" target="_blank">@Jcn5988</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            SULIFU TG: <a href="https://t.me/SULIFU_77" target="_blank">@SULIFU_77</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            RM TG: <a href="https://t.me/wumoda" target="_blank">@wumoda</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            CLOUDPAY TG: <a href="https://t.me/workhard_XXX" target="_blank">@workhard_XXX</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            CLOUDPAY TG: <a href="https://t.me/CLOUDPAY_ON3" target="_blank">@CLOUDPAY_ON3</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            THAIJUSTPAY TG: <a href="https://t.me/aa1996699" target="_blank">@aa1996699</a>
+        </p>
+        <p>
+            <i class="fab fa-telegram" style="color: #0088cc; font-size: 20px; vertical-align: middle;"></i>
+            THAIJUSTPAY TG: <a href="https://t.me/Goodgogo88" target="_blank">@Goodgogo88</a>
+        </p>
+    </div>
 </body>
 </html>
