@@ -7,11 +7,11 @@
     <!-- 引入 Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* 設定背景圖片 */
+        /* 設定背景顏色 */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #fff; /* 背景顏色設為白色 */
+            background-color: #f0f0f0; /* 背景顏色設為灰色 */
             display: flex;
             justify-content: center; /* 水平置中 */
             align-items: center; /* 垂直置中 */
@@ -21,15 +21,12 @@
 
         /* 背景圖片容器 */
         .background-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); /* 將圖片置中 */
-            width: 80%; /* 縮小背景圖片寬度 */
-            max-width: 800px; /* 設定最大寬度 */
+            position: relative;
+            margin: 0 auto; /* 水平置中 */
+            width: 150px; /* 縮小背景圖片寬度 */
             height: auto; /* 自動調整高度 */
-            opacity: 0.5; /* 淡化背景圖片 */
-            z-index: -1; /* 將背景圖片置於文字下方 */
+            display: block; /* 獨立一行顯示 */
+            margin-bottom: 20px; /* 與標題保持間距 */
         }
 
         h1 {
