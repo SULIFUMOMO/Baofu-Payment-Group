@@ -7,7 +7,6 @@
     <!-- 引入 Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* 全域設定 */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -18,7 +17,6 @@
             text-align: center;
         }
 
-        /* 背景圖片（自動調整尺寸） */
         .background-image {
             width: 100%;
             height: auto;
@@ -50,7 +48,6 @@
             text-decoration: underline;
         }
 
-        /* 國旗區塊 */
         .flags {
             display: flex;
             flex-wrap: wrap;
@@ -66,7 +63,7 @@
             border-radius: 3px;
         }
 
-        /* 聯絡資訊排版 */
+        /* 聯絡資訊樣式 */
         .contact-item {
             display: flex;
             align-items: center;
@@ -75,6 +72,8 @@
             flex-wrap: wrap;
             margin: 6px 0;
             font-size: 16px;
+            max-width: 500px;
+            text-align: left;
         }
 
         .contact-item i {
@@ -88,6 +87,7 @@
             word-break: break-all;
         }
 
+        /* 手機版調整 */
         @media (max-width: 600px) {
             h1 {
                 font-size: 18px;
@@ -99,21 +99,24 @@
             }
 
             .contact-item {
-                justify-content: center;
+                justify-content: flex-start; /* 靠左對齊 */
+                text-align: left;
+                margin-left: 15px;
                 font-size: 15px;
-                gap: 6px;
+            }
+
+            .contact-item i {
+                margin-right: 6px; /* LOGO 與文字距離 */
             }
         }
     </style>
 </head>
 <body>
-    <!-- 背景圖片 -->
     <img class="background-image" src="https://raw.githubusercontent.com/SULIFUMOMO/Baofu-Payment-Group/refs/heads/main/BAOFU.png" alt="背景圖片">
 
     <div>
         <h1>歡迎來到寶付國際支付集團 - Welcome to Baofu International Payment Group</h1>
 
-        <!-- 國旗圖片 -->
         <div class="flags">
             <img src="https://flagcdn.com/w40/cn.png" alt="中國">
             <img src="https://flagcdn.com/w40/my.png" alt="馬來西亞">
@@ -139,46 +142,19 @@
             For any payment services, please contact the following representative.
         </p>
 
-        <!-- 聯繫資訊 -->
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            BD Director TG: <a href="https://t.me/mrsushiyummy" target="_blank">@fruitybear123</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/Bmw58168" target="_blank">@Bmw58168</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/SULIFU_77" target="_blank">@SULIFU_77</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/Cola_168" target="_blank">@Cola_168</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/wumoda" target="_blank">@wumoda</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/workhard_XXX" target="_blank">@workhard_XXX</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/aa1996699" target="_blank">@aa1996699</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/Goodgogo88" target="_blank">@Goodgogo88</a>
-        </div>
-        <div class="contact-item">
-            <i class="fab fa-telegram"></i>
-            Business development TG: <a href="https://t.me/sampo5757" target="_blank">@sampo5757</a>
-        </div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> BD Director TG: <a href="https://t.me/mrsushiyummy" target="_blank">@fruitybear123</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/Bmw58168" target="_blank">@Bmw58168</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/SULIFU_77" target="_blank">@SULIFU_77</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/Cola_168" target="_blank">@Cola_168</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/wumoda" target="_blank">@wumoda</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/workhard_XXX" target="_blank">@workhard_XXX</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/aa1996699" target="_blank">@aa1996699</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/Goodgogo88" target="_blank">@Goodgogo88</a></div>
+        <div class="contact-item"><i class="fab fa-telegram"></i> Business development TG: <a href="https://t.me/sampo5757" target="_blank">@sampo5757</a></div>
     </div>
 </body>
 </html>
+
 
 
 
