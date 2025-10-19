@@ -20,10 +20,12 @@
 
         /* 背景圖片容器 */
         .background-image {
-            width: 1000px; /* 放大背景圖片寬度 */
-            height: auto; /* 自動調整高度 */
-            margin-top: 20px; /* 與頁面頂部保持距離 */
-        }
+    width: 100%;              /* 寬度自適應螢幕 */
+    height: auto;             /* 高度等比例縮放 */
+    max-width: 1000px;        /* 桌面最大寬度不超過 1000px */
+    margin-top: 20px;
+    object-fit: contain;      /* 保持圖片完整顯示（不裁切） */
+}
 
         h1 {
             color: #222; /* 加深標題文字顏色 */
@@ -139,6 +141,7 @@
     </div>
 </body>
 </html>
+
 
 
 
