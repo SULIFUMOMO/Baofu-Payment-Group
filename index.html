@@ -67,6 +67,40 @@
             border: 1px solid #ccc; /* 增加邊框 */
             border-radius: 3px; /* 輕微圓角效果 */
         }
+        .contact-item {
+    display: flex;                 /* 使用彈性排版 */
+    align-items: center;           /* 垂直置中 */
+    justify-content: flex-start;   /* 文字靠左對齊 */
+    gap: 8px;                      /* 圖標與文字間距 */
+    flex-wrap: wrap;               /* 小螢幕可自動換行 */
+    margin: 6px 0;                 /* 每項間距 */
+    font-size: 16px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #0088cc;
+    flex-shrink: 0;                /* 圖標不被壓縮 */
+}
+
+.contact-item a {
+    color: #0088cc;
+    text-decoration: none;
+    word-break: break-all;         /* 防止長帳號超出畫面 */
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* 手機版微調字型大小與間距 */
+@media (max-width: 600px) {
+    .contact-item {
+        font-size: 15px;
+        gap: 6px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -141,6 +175,7 @@
     </div>
 </body>
 </html>
+
 
 
 
